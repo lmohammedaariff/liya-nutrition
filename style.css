@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1b8f3c;
+}
+
+.logo span {
+    color: #0f3d24;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu .btn {
+    padding: 8px 16px;
+    border: 2px solid #1b8f3c;
+    border-radius: 20px;
+    color: #1b8f3c;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #0f3d24;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tag {
+    background: #1b8f3c;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #4ade80;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.primary {
+    padding: 12px 22px;
+    background: white;
+    color: #0f3d24;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.secondary {
+    padding: 12px 22px;
+    background: transparent;
+    border: 2px solid #4ade80;
+    color: #4ade80;
+    border-radius: 25px;
+}

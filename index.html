@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LiyaNutrition</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1b8f3c;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu .btn {
+    padding: 8px 18px;
+    border: 2px solid #1b8f3c;
+    border-radius: 20px;
+    color: #1b8f3c;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: #0f3d24;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.tag {
+    background: #1b8f3c;
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #4ade80;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.primary {
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: white;
+    color: #0f3d24;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BOOKING FORM */
+.booking {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.confirm {
+    width: 100%;
+    padding: 14px;
+    background: #1b8f3c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* DASHBOARD */
+.dashboard {
+    padding: 60px 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+.red { background: #f87171; }
+.green { background: #4ade80; }
+.blue { background: #60a5fa; }
+.yellow { background: #facc15; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">LiyaNutrition</div>
+    <ul class="menu">
+        <li onclick="document.getElementById('booking').scrollIntoView()">Services</li>
+        <li>Community</li>
+        <li class="btn" onclick="document.getElementById('booking').scrollIntoView()">Book Now</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="tag">YOUR HEALTH, YOUR WEALTH</div>
+    <h1>Invest in a <span>Healthier Future</span><br>Today</h1>
+    <p class="subtitle">
+        Nutrition is not just about eating; it’s about nourishing your body, mind,
+        and soul to live your best life.
+    </p>
+    <button class="primary" onclick="document.getElementById('booking').scrollIntoView()">
+        Start Transformation
+    </button>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking" id="booking">
+    <h2>Daily Registration & Booking</h2>
+
+    <div class="form-box">
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Phone">
+        <input type="email" placeholder="Email (Optional)">
+        <input type="date">
+        <select>
+            <option>Weight Loss</option>
+            <option>Nutrition</option>
+            <option>Health Improvement</option>
+            <option>General</option>
+        </select>
+        <button class="confirm">Confirm Booking</button>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+    <h2 style="text-align:center;">Health Insights Dashboard</h2>
+
+    <div class="cards">
+        <div class="card red">Sedentary Lifestyle</div>
+        <div class="card yellow">Processed Food</div>
+        <div class="card blue">Lack of Sleep</div>
+        <div class="card green">Balanced Nutrition</div>
+    </div>
+</section>
+
+</body>
+</html>
